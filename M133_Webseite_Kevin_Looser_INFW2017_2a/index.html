@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="css/layout.css" rel="stylesheet">
+    <script src="js/navigation.js"></script>
+    <script src="js/validation.js"></script>
+</head>
+<body class="font" onload="disableButton('button01')">
+<header class="header" id="headNav">
+    <h1>Blog</h1>
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="#Home" onclick="goHome()">Home</a>
+            </li>
+            <li>
+                <a href="#Blog" onclick="showBlog()">Blog</a>
+            </li>
+            <li>
+                <a href="#Login" onclick="showLogin()">Login</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <!-- Sign In -->
+    <div class="element" id="signinBlock">
+        <h2>Sign In</h2>
+        <form id="formSignIn" onchange="checkSignIn()">
+            <div class="formrow">
+                <label for="username01" class="label">Username</label>
+                <input id="username01" type=email placeholder="Email-Address" required onkeyup="checkSignIn()">
+                <br/>
+            </div>
+            <div class="formrow">
+                <label for="password01" class="label">Password</label>
+                <input id="password01" type=password placeholder="Password" required pattern="[0-9a-zA-Z!?&$_]{8,16}" onkeyup="checkSignIn()">
+                <br/>
+            </div>
+            <button id="button01" type=submit onclick="showSignIn()">Sign In</button>
+        </form>
+        <a href="#Register" class="link" id="registerlink" onclick="register()">I would like to register a new account</a>
+    </div>
+    <!-- Register -->
+    <div class="element" id="registerBlock">
+        <h2>Register</h2>
+        <form id="formRegister">
+            <div class="formrow">
+                <label for="username02" class="label">Username*</label>
+                <input id="username02" type=email placeholder="Email-Address" required onkeyup="checkRegister()">
+                <br/>
+            </div>
+            <div class="formrow">
+                <label for="password02" class="label">Password*</label>
+                <input id="password02" type=password placeholder="Password" required pattern="[0-9a-zA-Z!?&$_]{8,16}" title="Enter a Password between 8 and 16 Characters (alphanumerical, ?, !, $, &, _" onkeyup="checkRegister()">
+                <div class="formrow" id="hint">
+                    <p class="hintText">
+                        Enter a Password between 8 and 16 Characters (alphanumerical, ?, !, $, &, _)
+                    </p>
+                </div>
+                <br/>
+            </div>
+            <div class="formrow">
+                <label for="rptPW" class="label">Repeat PW*</label>
+                <input id="rptPW" type=password placeholder="Repeat Password" required pattern="[0-9a-zA-Z!?&$_]{8,16}" title="Repeat your Password" onkeyup="checkPasswords();checkRegister()">
+                <div id="confirmPW" class="formrow">
+                    <p id="message" class="passwordCheck">
+                        <!-- Passwords Match! OR Passwords Do Not Match! -->
+                    </p>
+                </div>
+                <br/>
+            </div>
+            <div class="formrow">
+                <label class="label">Language*</label>
+                <select id="dropdown" required size="1">
+                    <option value="deutsch">Deutsch</option>
+                    <option value="english">Français</option>
+                    <option value="francais" selected>English</option>
+                </select>
+                <br/>
+            </div>
+            <div class="formrow">
+                <label class="label">Gender</label>
+                <label class="spLabel"><input id="radio01" type="radio" name="gender" value="male">Male</label>
+                <label class="spLabel"><input id="radio02" type="radio" name="gender" value="female">Female</label><br/>
+            </div>
+            <div class="formrow">
+                <label class="label">Hobby</label>
+                <label class="spLabel">Reading<input id="checkbox01" type="checkbox" name="hobby" value="reading"></label><br/>
+                <label class="spLabel">Writing<input id="checkbox02" type="checkbox" name="hobby" value="writing"></label><br/>
+                <label class="spLabel">Sports<input id="checkbox03" type="checkbox" name="hobby" value="sports"></label><br/>
+            </div>
+            <button id="button02" type=submit href="#Home" onclick="showSuccess()">Sign In</button>
+        </form>
+    </div>
+    <!-- Blog -->
+    <div class="element" id="blogBlock">
+        <h3>Hiking in Germany Day 2</h3>
+        <div class="metainfo">
+            <h5 class="author">Jonathan Smith</h5>
+            <h5 class="date">21.02.2018</h5>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div class="image">
+            <img src="pictures/lakeside.jpg" alt="Image" width="100%">
+        </div>
+    </div>
+    <div class="element" id="blogBlock">
+            <h3>Hiking in Germany Day 1</h3>
+            <div class="metainfo">
+                <h5 class="author">Jonathan Smith</h5>
+                <h5 class="date">20.02.2018</h5>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <div class="image">
+                <img src="pictures/lakeside.jpg" alt="Image" width="100%">
+            </div>
+        </div>
+</section>
+<footer>
+    <h6>&copy 2018 Kevin Looser<br/><br/>Module 133</h6>
+</footer>
+</body>
+</html>
