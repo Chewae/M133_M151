@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------ */
+/* General Formatting */
+
+.font {
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+body {
+    margin:0;
+    background-color:#555555;
+}
+
+button {
+	width:100px;
+	height:40px;
+	display:block;
+	margin:0 auto;
+}
+
+html {
+	min-height:100%;
+	position:relative;
+}
+
+.error {
+	color:#ff6666;
+	font-style:bold;
+}
+
+/* ------------------------------------------------------ */
+/* Header Formatting */
+
+h1 {
+    color:white;
+    margin:0 0 16px 0;
+    padding:20px 20px 0 20px;
+}
+
+.header {
+    background-color:darkslateblue;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.headUser {
+	color:white;
+    margin:0;
+    padding:10px;
+    float:right;
+}
+
+/* ------------------------------------------------------ */
+/* Navigation Formatting */
+
+#navbar {
+    background-color:gray;
+    box-shadow: 0 5px 15px;
+}
+
+#navbar ul {
+    padding:10px;
+    margin:0;
+}
+
+#navbar ul li{
+    display:inline;
+}
+
+#navbar a {
+    text-decoration:none;
+    color:white;
+    padding:10px;
+}
+
+#navbar a:hover{
+    background-color:darkgray;
+}
+
+/* ------------------------------------------------------ */
+/* Section Formatting */
+
+.label {
+    float:left;
+    margin:0;
+}
+
+section h1 {
+    color:black;
+    margin:0 0 10px 0;
+    padding:20px 20px 0 20px;
+}
+
+.spLabel {
+    float:right;
+}
+
+.link {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration-color: darkslateblue;
+    text-decoration: underline;
+}
+
+#username01 {
+    float:right;
+    margin:0;
+}
+
+#username02 {
+    float:right;
+    margin:0;
+}
+
+#password01 {
+    float:right;
+    margin:0;
+}
+
+#password02 {
+    float:right;
+    margin:0;
+}
+
+#rptPW {
+    float:right;
+    margin:0;
+}
+
+#button01 {
+    margin:10px auto 30px auto;
+}
+
+#button02 {
+    margin:10px auto 30px auto;
+}
+
+#dropdown {
+    float:right;
+}
+
+#radio01 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#radio02 {
+    float:right;
+    margin:3px 30px 2px 8px;
+}
+
+#checkbox01 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#checkbox02 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#checkbox03 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#hint {
+    float:right;
+    margin:0;
+    display:none;
+}
+
+.hintText {
+    float:right;
+    font-size:0.6em;
+    text-align:center;
+    width:180px;
+    margin:0;
+}
+
+.passwordCheck {
+    float:right;
+    clear:both;
+    font-size:0.6em;
+    text-align:center;
+    width:170px;
+    margin:2px 0 0 0;
+}
+
+section {
+    margin: 150px auto 150px auto;
+}
+
+section input {
+    margin:10px 0;
+}
+
+section a {
+    margin:10px 0;
+}
+
+section .formrow {
+    margin:20px 0 30px 0;
+    padding:0;
+    width:350px;
+}
+
+section .element {
+    margin:20px auto;
+    padding:20px 50px;
+    width:400px;
+    align-content:center;
+    background-color:lightgray;
+    box-shadow: 5px 5px 15px;
+}
+
+section div p {
+    text-align:center;
+}
+
+/* ------------------------------------------------------ */
+/* Blog Formatting */
+
+.image {
+    margin:0 auto;
+    padding:0;
+    width:300px;
+}
+
+.author {
+    float:left;
+    margin:0;
+}
+
+.date {
+    float:right;
+    margin:0;
+}
+
+.metainfo {
+    margin:0;
+    padding:0;
+    height:30px;
+}
+
+.blogdescription {
+	width:400px;
+	min-width:400px;
+	max-width:400px;
+	height:400px;
+}
+
+.entryInput {
+	width:400px;
+	height:20px;
+}
+
+/* ------------------------------------------------------ */
+/* Footer Formatting */
+
+h6 {
+    text-align:center;
+    padding:15px;
+    color:white;
+}
+
+footer {
+    height:100px;
+    background-color:darkslateblue;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    overflow:hidden;
+}

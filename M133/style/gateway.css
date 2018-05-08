@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.font {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+}
+
+body {
+
+}
+
+nav {
+    margin: 50px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-style: groove;
+    border-width: thick;
+    border-color: black;
+    padding: 10px 20px;
+}

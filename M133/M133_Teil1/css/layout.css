@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------ */
+/* General Formatting */
+
+.font {
+    font-family:Arial,sans-serif;
+}
+
+body {
+    margin:0;
+    background-color:#555555;
+}
+
+/* ------------------------------------------------------ */
+/* Header Formatting */
+
+h1 {
+    color:white;
+    margin:0 0 10px 0;
+    padding:20px 20px 0 20px;
+}
+
+.header {
+    background-color:darkslateblue;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+/* ------------------------------------------------------ */
+/* Navigation Formatting */
+
+#navbar {
+    background-color:gray;
+    box-shadow: 0 5px 15px;
+}
+
+#navbar ul {
+    padding:10px;
+    margin:0;
+}
+
+#navbar ul li{
+    display:inline;
+}
+
+#navbar a {
+    text-decoration:none;
+    color:white;
+    padding:10px;
+}
+
+#navbar a:hover{
+    background-color:darkgray;
+}
+
+/* ------------------------------------------------------ */
+/* Section Formatting */
+
+.label {
+    float:left;
+    margin:0;
+}
+
+.spLabel {
+    float:right;
+}
+
+#username01 {
+    float:right;
+    margin:0;
+}
+
+#username02 {
+    float:right;
+    margin:0;
+}
+
+#password01 {
+    float:right;
+    margin:0;
+}
+
+#password02 {
+    float:right;
+    margin:0;
+}
+
+#rptPW {
+    float:right;
+    margin:0;
+}
+
+#button01 {
+    margin:10px auto 30px auto;
+}
+
+#button02 {
+    margin:10px auto 30px auto;
+}
+
+#dropdown {
+    float:right;
+}
+
+#radio01 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#radio02 {
+    float:right;
+    margin:3px 30px 2px 8px;
+}
+
+#checkbox01 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#checkbox02 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#checkbox03 {
+    float:right;
+    margin:3px 0 2px 8px;
+}
+
+#hint {
+    float:right;
+    margin:0;
+    display:none;
+}
+
+.hintText {
+    float:right;
+    font-size:0.6em;
+    text-align:center;
+    width:180px;
+    margin:0;
+}
+
+.passwordCheck {
+    float:right;
+    clear:both;
+    font-size:0.6em;
+    text-align:center;
+    width:170px;
+    margin:2px 0 0 0;
+}
+
+section {
+    margin-top:150px;
+}
+
+section input {
+    margin:10px 0;
+}
+
+section a {
+    margin:10px 0;
+}
+
+section .formrow {
+    margin:20px 0 30px 0;
+    padding:0;
+    width:350px;
+}
+
+section .element {
+    margin:20px auto;
+    padding:20px;
+    width:400px;
+    align-content:center;
+    background-color:lightgray;
+    box-shadow: 5px 5px 15px;
+}
+
+section div p {
+    text-align:center;
+}
+
+.image {
+    margin:0 auto;
+    padding:0;
+    width:300px;
+}
+
+.author {
+    float:left;
+    margin:0;
+}
+
+.date {
+    float:right;
+    margin:0;
+}
+
+.metainfo {
+    margin:0;
+    padding:0;
+    height:30px;
+}
+
+/* ------------------------------------------------------ */
+/* Footer Formatting */
+
+h6 {
+    text-align:center;
+    padding:15px;
+    color:white;
+}
+
+footer {
+    height:100px;
+    background-color:darkslateblue;
+    bottom:0;
+    width:100%;
+}
+
+/* ------------------------------------------------------ */
+/* Default Setup */
+
+#registerBlock {
+    display:none;
+}
